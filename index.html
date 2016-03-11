@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.css"> -->
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</head>
+<style type="text/css">
+.saveButton {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.saveButton.focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40;
+}
+
+.saveButton:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+</style>
+
+<body onload="init()" on>
+    <div>
+        <select onchange="changeSkin()" id="selectedSkin">
+            <option value="">Select your skin</option>
+            <option value="kama">Kama</option>
+            <option value="office2013">Office</option>
+            <option value="moono">Moono</option>
+        </select>
+        <select onchange="changeLanguage()" id="selectedLanguage">
+            <option value="">Select your language</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>
+        <button onclick="openNewTab()">Open New tab</button>
+        <textarea name="smartedContentEditor" id="smartedContentEditor" rows="10" cols="80">
+            Demo test of the flie to be writtten on the template.
+        </textarea>
+    <button class="btn saveButton saveButton" onclick="save()">save</button>
+    <script type="text/javascript" src="smartedckeditor.js"></script>
+</body>
+
+</html>
