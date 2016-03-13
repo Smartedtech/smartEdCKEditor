@@ -26,13 +26,24 @@ function changeLanguage() {
 function openNewTab() {
     alert('open new tab');
 }
+window.onload = function() {
+    init();
+}
+
+CKEDITOR.plugins.registered['save'] = {
+    init: function(editor) {
+        var command = editor.addCommand('save', {
+            exec: function(editor) {
+                save();
+            }
+        });
+        editor.ui.addButton('Save', { label: 'Save', command: 'save' });
+    }
+}
 
 function save() {
 
-    var getData = CKEDITOR.instances.smartedContentEditor.getData(function(evt) {
-
-    });
-
+    var getData = CKEDITOR.instances.smartedContentEditor.getData();
     alert(getData);
 
 }

@@ -1,17 +1,7 @@
-/**
- * @license Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md or http://ckeditor.com/license
- */
-
-// CKEDITOR.editorConfig = function( config ) {
-// 	// Define changes to default configuration here. For example:
-// 	// config.language = 'fr';
-// 	// config.uiColor = '#AADC6E';
-// };
 CKEDITOR.editorConfig = function( config ) {
 	config.toolbar = [
-		// { name: 'document', items: [ 'Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates' ] },
-		{ name: 'document', items: [ 'Preview', 'Save'] },
+		
+		{ name: 'document', items: ['Save'] },
 		{ name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
 		{ name: 'editing', items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] },
 		{ name: 'forms', items: [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField' ] },
