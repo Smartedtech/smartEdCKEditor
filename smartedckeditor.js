@@ -91,8 +91,8 @@ window.onload = function() {
 
 function closeTab(tab) {
     alert("close : " + tab);
-    var tabLi = document.getElementsByClassName('tab');
-    tabElement.removeChild(tabLi);
+    var tabLi = document.getElementsByClassName(tab);
+    tabLi[0].parentNode.removeChild(tabLi);
 }
 
 function initFileSystem() {
